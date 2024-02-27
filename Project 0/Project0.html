@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Countdown Timer</title>
+    <link rel="stylesheet" href="Project0.css">
+    
+</head>
+<body>
+    <img src="/images - Copy/btc.jpg" alt="BITCOIN" class="img">
+    
+    <div id="Timer-running">
+        <div id="About">
+            <h1 class="Project0"><b> BITCOIN COUNTDOWN TIMER</b></h1>
+            <p class="Project0"> This timer is a countdown for 1000 bitcoins to be shared for the youths of Nigeria</p>
+            <p>The bitcoin giveaway ends on the 29 <sup>th</sup> of February 2024</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Nulla blanditiis consequuntur enim nesciunt rerum sed veritatis. <br> Quia id corporis similique!</p>
+        </div>
+        <div id="main">
+            <ul id="timer-container">
+                <li class="days"> <span id="Days">0</span> days</li>
+                <li class="hours"> <span id="Hours">0</span> hours</li>
+                <li class="minutes"> <span id="Minutes">0</span> minutes</li>
+                <li class="seconds"> <span id="Seconds">0</span> seconds</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <script>
+        let Countdowndate = new Date("February 27 2024").getTime() + 100000 * 1000;
+        let timerInterval;
+        const daysElem = document.querySelector('#Days');
+        const hoursElem = document.querySelector('#Hours');
+        const minutesElem = document.querySelector('#Minutes');
+        const secondsElem = document.querySelector('#Seconds');
+        const TimerRunningContent = document.querySelector('#Timer-running');
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const difference = (Countdowndate - now) / 1000;
+
+            if (difference < 0) {
+                clearInterval(timerInterval);
+                countdowndate = new Date().getTime() + originalCountdownDuration;
+                updateCountdown(originalCountdownDuration);
+                startCountdown();
+                return;
+            }
+
+            const days = Math.floor(difference / (60 * 60 * 24));
+            const hours = Math.floor((difference % (60 * 60 * 24)) / (60 * 60));
+            const minutes = Math.floor((difference % (60 * 60)) / 60);
+            const seconds = Math.floor(difference % 60);
+
+            daysElem.textContent = days;
+            hoursElem.textContent = hours;
+            minutesElem.textContent = minutes;
+            secondsElem.textContent = seconds;
+        };
+
+        window.addEventListener('load', () => {
+            updateCountdown();
+            timerInterval = setInterval(updateCountdown, 1000);
+        });
+    </script> -->
+
+    <script src="Project0.js"></script>
+</body>
+</html>
